@@ -1,0 +1,32 @@
+{
+  "name": "lotomaproxy",
+  "version": "1.0.0",
+  "description": "Front end for Lotoma Proxies",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txdr/LotomaProxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "games",
+    "website",
+    "html",
+    "css",
+    "js",
+    "nodejs",
+    "express"
+  ],
+  "author": "txdr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/txdr/LotomaProxy/issues"
+  },
+  "homepage": "https://github.com/txdr/LotomaProxy#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
