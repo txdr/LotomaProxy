@@ -5,6 +5,6 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(express.static("views"));
-server.listen(8080);
+server.listen(80);
 
 console.log("Server online, accessible at http://localhost:8080/");
