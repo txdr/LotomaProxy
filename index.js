@@ -7,4 +7,4 @@ const server = http.createServer(app);
 app.use(express.static("views"));
 server.listen(80);
 
-console.log("Server online, accessible at http://localhost:8080/");
+console.log("Server online, accessible at http://localhost:80/");

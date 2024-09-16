@@ -1,8 +1,16 @@
-for (const element of document.getElementsByClassName("home")[0].children) {
-    element.style.opacity = "0%";
+let bElements = [
+    ...document.getElementsByClassName("home")[0].children,
+    ...document.getElementsByClassName("footer")[0].children
+];
+for (const element of bElements) {
     if (element.hasAttribute("redir")) {
         element.addEventListener("click", () => {
-            window.location.replace(element.getAttribute("redir"));
+            for (const e of bElements) {
+                e.classList.add("animate__animated", "animate__fadeOut");
+            }
+            setTimeout(() => {
+               window.location.replace(element.getAttribute("redir"));
+            });
         });
     }
 }
@@ -44,7 +52,7 @@ setTimeout(() => {
                 setTimeout(() => {
                     document.getElementsByClassName("footer")[0].style.opacity = "100%";
                     document.getElementsByClassName("footer")[0].classList.add("animate__animated", "animate__fadeIn");
-                }, 250);
+                }, (0.25 * 6) * 1000);
             }
         }
     }, 10);
