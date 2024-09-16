@@ -2,9 +2,10 @@
   "name": "lotomaproxy",
   "version": "1.0.0",
   "description": "Front end for Lotoma Proxies",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "npm run test"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",

@@ -10,12 +10,12 @@ for (const element of bElements) {
             }
             setTimeout(() => {
                window.location.replace(element.getAttribute("redir"));
-            });
+            }, 2000);
         });
     }
 }
 
-function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
+function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor, repeat) {
     let paths = document.querySelectorAll("path");
     let mode=repeat?'infinite':'forwards'
     for (let i = 0; i < paths.length; i++) {
